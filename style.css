@@ -1,0 +1,205 @@
+*{
+
+}
+body{
+    margin: 0;
+    font-size: 15px;
+
+}
+
+.title{
+    width:200px;
+   display: block;
+    margin: 0 auto;
+}
+.title:after{
+    content: "This is me!";
+    color: blue;
+    position: absolute;
+    border: 1px solid firebrick;
+    font-size:0.8em;
+}
+.description{
+    display: block;
+    max-width: 400px;
+    height: 180px;
+    margin-left: 20px;
+    overflow: scroll;
+    left: 180px;
+    text-align: justify;
+    text-indent: 18px;
+    line-height: 20px;
+}
+
+.description2{
+    display: block;
+    max-width: 400px;
+    height: 280px;
+    margin-left: 20px;
+    left: 180px;
+    color: rgba(0,0,0,.4)
+
+}
+
+.description:hover{
+    text-shadow: 1px 3px 3px black;
+    font-variant: small-caps;
+}
+
+.description2:hover{
+    color: rgb(120,120,255);
+}
+
+.description:first-letter{
+    color: red;
+    font-size: 25px;
+}
+
+.description:first-line{
+    color: green;
+}
+
+.title + ul {
+    display:inline-block;
+    float:right;
+    margin-right: 500px;
+}
+
+.title + ul li:nth-child(even){
+    color: red;
+}
+
+.title + ul li:nth-last-child(even){
+    color: green;
+}
+
+.title + ul li:last-child,.title + ul li:first-child{
+    font-size: 130%;
+    letter-spacing: 5px;
+    text-decoration: overline;
+}
+
+
+.container{
+    width: 1190px;
+    margin: 0 auto;
+    text-align: center;
+    position:relative;
+    height: auto;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
+
+nav .icon-1{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    display:inline-block;
+    float:right;
+    margin-right: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+nav > ul {
+    display: block;
+  background-color: aliceblue;
+    float: left;
+}
+nav > ul > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav > ul > li > a{
+    display:block;
+    color: red;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+#brand{
+    position: absolute;
+    left:  800px;
+    background-color: aquamarine;
+    width: 40px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+#brand:hover{
+    border-right: 1px solid rgba(255,40,40,.4);
+    border-left: 1px solid rgba(255,40,40,.4);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,.4);
+}
+
+div.square{
+    display:block;
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    /*background-color: #e2f442;*/
+    left: 990px;
+    top: 120px;
+    border-radius: 20% 70% 20% 70%;
+    background-image: url(img/limon.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+div.triangle-up{
+    display:block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    /*background-color: #e2f442;*/
+    left: 1220px;
+    top: 120px;
+    border-bottom: 100px solid tomato;
+    border-left: 50px solid yellow;
+    border-right: 50px solid yellow;
+    border-top: 0;
+}
+
+div.triangle-down{
+    display:block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    /*background-color: #e2f442;*/
+    left: 1330px;
+    top: 120px;
+    border-top: 100px solid tomato;
+    border-left: 50px solid yellow;
+    border-right: 50px solid yellow;
+    border-bottom: 0;
+}
+
+div.note{
+    width: 100px;
+    height: 80px;
+    background-color: #888;
+    border-radius: 10%;
+    margin: 0 15%;
+    position:relative;
+}
+
+div.note:after{
+    content: '';
+    border-bottom: 10px solid #888;
+    border-top: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    left: 40px;
+
+}
